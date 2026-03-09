@@ -1,0 +1,13 @@
+# KiCad
+*.kicad_prl
+*_autosave-*
+*-backups/
+~*.lck
+fp-info-cache
+*.bak
+#auto_saved_files#
+
+# OS junk
+.DS_Store
+*~
+\#*\#

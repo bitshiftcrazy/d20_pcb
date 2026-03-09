@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "d20_pcb")(type "KiCad")(uri "${KIPRJMOD}/libraries/footprints/d20_pcb.pretty")(options "")(descr "Project-specific footprints for the d20 PCB"))
+)

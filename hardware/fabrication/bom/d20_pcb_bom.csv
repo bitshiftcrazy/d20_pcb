@@ -1,0 +1,15 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"D7,D10,D6,D19,D4,D20,D18,D1,D12,D16,D13,D5,D15,D9,D3,D17,D14,D11,D8,D2";"LED_0603_1608Metric";20;"LED";;;
+2;"J2";"d20_touchpad";1;"Conn_01x01_Pin";;;
+3;"G***";"d20_line_art";1;"d20_line_art";;;
+4;"R8,R7";"R_0402_1005Metric";2;"10kOhm";;;
+5;"R6";"R_0402_1005Metric";1;"1MOhm";;;
+6;"J1";"PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left";1;"Conn_01x06_Socket";;;
+7;"U1";"SOIC-14_3.9x8.7mm_P1.27mm";1;"ATtiny84-20P";;;
+8;"R2,R3,R1,R4,R5";"R_0402_1005Metric";5;"150 Ohm";;;
+9;"C2(Electrolytic)1";"C_0402_1005Metric";1;"10uF";;;
+10;"SW2";"d20_pushbutton";1;"SW_Push";;;
+11;"C3";"C_0402_1005Metric";1;"10nF";;;
+12;"BT1";"d20_battery";1;"Battery_Cell";;;
+13;"SW1";"SW_SPDT_PCM12";1;"SW_SPST";;;
+14;"C1(Ceramic)1";"C_0402_1005Metric";1;"0.1uF";;;
