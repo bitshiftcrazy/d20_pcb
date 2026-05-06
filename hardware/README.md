@@ -89,6 +89,18 @@ Vendor-specific assembly files for JLCPCB are provided in:
 
 fabrication/jlcpcb/
 
+Alternatively:
+The files in `fabrication/releases/` contain the currently tested and
+successfully manufactured board revision.
+
+If you modify the KiCad source files, you should regenerate and review
+all fabrication outputs (Gerbers, drill files, BOM, pick-and-place files)
+before ordering boards.
+
+Even small PCB edits can invalidate previously generated fabrication files.
+
+If you are new to PCB manufacturing, it is recommended to use the tested
+release files directly instead of generating new Gerbers yourself.
 
 ## Regenerating Fabrication Files
 
