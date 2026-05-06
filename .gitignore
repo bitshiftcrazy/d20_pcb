@@ -7,7 +7,18 @@ fp-info-cache
 *.bak
 #auto_saved_files#
 
+# AVR / firmware build output
+firmware/build/
+*.elf
+*.hex
+*.o
+*.d
+*.map
+
+# Editor junk
+*.swp
+*~
+
 # OS junk
 .DS_Store
-*~
-\#*\#
+Thumbs.db
