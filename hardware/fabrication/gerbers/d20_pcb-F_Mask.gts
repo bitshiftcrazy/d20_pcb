@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,9.0.7*%
-%TF.CreationDate,2026-03-09T19:47:44+01:00*%
-%TF.ProjectId,d20_pcb,6432305f-7063-4622-9e6b-696361645f70,rev?*%
-%TF.SameCoordinates,Original*%
-%TF.FileFunction,Soldermask,Top*%
-%TF.FilePolarity,Negative*%
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,10.0.0*
+G04 #@! TF.CreationDate,2026-04-06T21:16:42+02:00*
+G04 #@! TF.ProjectId,d20_pcb,6432305f-7063-4622-9e6b-696361645f70,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Soldermask,Top*
+G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 9.0.7) date 2026-03-09 19:47:44*
+G04 Created by KiCad (PCBNEW 10.0.0) date 2026-04-06 21:16:42*
 %MOMM*%
 %LPD*%
 G01*

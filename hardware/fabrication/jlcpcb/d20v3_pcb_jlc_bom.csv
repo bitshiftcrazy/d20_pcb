@@ -1,0 +1,14 @@
+Comment,Designator,Footprint,LCSC
+Battery_Cell,BT1,d20_pcb:d20_battery,C238069
+0.1uF,C1(Ceramic)1,Capacitor_SMD:C_0402_1005Metric,C141382
+10uF,C2(Electrolytic)1,Capacitor_SMD:C_0402_1005Metric,C6119763
+10nF,C3,Capacitor_SMD:C_0402_1005Metric,C15195
+LED,"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20",LED_SMD:LED_0603_1608Metric,C19171390
+Conn_01x06_Socket,J1,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left,
+Conn_01x01_Pin,J2,d20_pcb:d20_touchpad,
+150 Ohm,"R1,R2,R3,R4,R5",Resistor_SMD:R_0402_1005Metric,C25082
+1MOhm,R6,Resistor_SMD:R_0402_1005Metric,C26083
+10kOhm,"R7,R8",Resistor_SMD:R_0402_1005Metric,C102749
+SW_SPST,SW1,Button_Switch_SMD:SW_SPDT_PCM12,C431540
+SW_Push,SW2,d20_pcb:d20_pushbutton,C596271
+ATtiny84-20P,U1,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,C1340034
