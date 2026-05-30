@@ -12,6 +12,10 @@ AVRDUDE = avrdude
 
 PROGRAMMER = usbasp
 
+LFUSE = 0xE2
+HFUSE = 0xDF
+EFUSE = 0xFF
+
 COMMON_SRC = \
 	src/charlieplex.c \
 	src/button.c \
@@ -78,7 +82,8 @@ LDFLAGS = -mmcu=$(MCU)
         test-adc-range test-touch-detect test-touch-long test-adc-band-finder \
         test-attunement \
         test-sequence \
-        eeprom-read eeprom-view clean
+        eeprom-read eeprom-view clean \
+        fuses
 
 all: hex size
 
@@ -86,6 +91,7 @@ help:
 	@echo "Targets:"
 	@echo "	 make all                         Build hex and show size"
 	@echo "	 make flash CHARACTER_ID=N        Build and flash selected character firmware"
+	@echo "	 make fuses                       Program ATtiny84 fuse bits (run once per MCU)"
 	@echo "	 make test                        Build test firmware using TEST_CASE"
 	@echo "	 make flash-test                  Build and flash test firmware using TEST_CASE"
 	@echo "	 make size                        Show AVR memory usage"
@@ -108,6 +114,9 @@ help:
 	@echo "	 TEST=0                           Normal firmware build (default)"
 	@echo "	 TEST=1                           Test build using src/test_main.c"
 	@echo "	 TEST_CASE=attunement             Selected test case"
+	@echo "	 LFUSE=0xE2                       Low fuse byte"
+	@echo "	 HFUSE=0xDF                       High fuse byte"
+	@echo "	 EFUSE=0xFF                       Extended fuse byte"
 	@echo ""
 	@echo "Valid TEST_CASE values:"
 	@echo "	 led_walk"
@@ -121,6 +130,7 @@ help:
 	@echo "	 sequence"
 	@echo ""
 	@echo "Examples:"
+	@echo "	 make fuses"
 	@echo "	 make flash"
 	@echo "	 make flash-test TEST_CASE=adc_band_finder"
 	@echo "	 make test-attunement"
@@ -189,5 +199,11 @@ eeprom-view: eeprom-read
 
 clean:
 	rm -rf build
+
+fuses:
+	$(AVRDUDE) -c $(PROGRAMMER) -p t84 -B 10 \
+		-U lfuse:w:$(LFUSE):m \
+		-U hfuse:w:$(HFUSE):m \
+		-U efuse:w:$(EFUSE):m
 
 -include build/*.d

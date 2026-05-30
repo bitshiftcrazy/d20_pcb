@@ -85,6 +85,19 @@ Example:
 make flash CHARACTER_ID=2
 ```
 
+## Fuse Bits
+
+Before flashing the firmware for the first time, program the ATtiny84 fuse
+bits:
+
+```sh
+make fuses
+```
+
+This configures the microcontroller to use the 8 MHz clock settings expected by the firmware.
+
+Fuse bits only need to be programmed once per microcontroller.
+
 ## Flashing
 
 To build and flash the firmware with a USBasp programmer:
