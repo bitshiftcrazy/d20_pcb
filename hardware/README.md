@@ -144,7 +144,20 @@ PCB Editor → Fabrication Outputs
 The board was intentionally designed with colourful solder masks and
 ENIG finishes in mind.
 
-I'd really love to see a pink board!
+~~I'd really love to see a pink board!~~
+
+Mission accomplished :D
+
+<p align="center">
+  <img src="../docs/d20_pcb_pink_front.jpg" width="45%">
+  <img src="../docs/d20_pcb_pink_back.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="../docs/d20_pcb_pink_glow.jpg" width="45%">
+</p>
+
+For comparison, here are the original render concepts:
 
 <p align="center">
   <img src="../docs/render_blue.png" width="45%">
