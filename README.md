@@ -102,9 +102,10 @@ There's customisation for both the players and the campaign hidden
 throughout the project because of how it came to be.
 The different character's animation can be interpreted as flavour and compiled in to your liking.
 
-Additional background and design details can be found here:
+## Further Reading
 
-- https://missmolerat.com/posts/d20_pcb/
+- Project blog post: https://missmolerat.com/posts/d20_pcb/
+- Hackaday: https://hackaday.com/2026/05/25/slightly-sentient-d20-might-subtly-shift-your-rolls/
 
 ## Licenses
 
