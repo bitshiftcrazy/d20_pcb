@@ -139,6 +139,44 @@ Manufacturing files can be regenerated from KiCad:
 PCB Editor → Fabrication Outputs
 ```
 
+## Assembly
+
+### Supplies
+
+* soldering iron (alternatively: heat plate or hot air)
+* solder (alternatively: solder paste)
+* flux
+* fume extractor or a well-ventilated space
+
+### Parts
+
+Many of the parts are influenced by what I had at home at the time.
+
+Quite a few can be swapped for whatever matches the footprint. I found that old TV remotes are wonderful donors for slide switches and push buttons, for example. At least that's where I got these components from.
+
+* 20 x SMD LEDs (0603)
+* 1 x 0.1 µF capacitor (0402)
+* 1 x 10 µF capacitor (0402)
+* 1 x 10 nF capacitor (0402)
+* 5 x 150 Ω resistors (0402)
+* 2 x 10 kΩ resistors (0402)
+* 1 x 1 MΩ resistor (0402)
+* 1 x Keystone 1060TR battery holder
+* 1 x CR2032 coin cell battery
+* 1 x ATtiny84-20P Microchip ATTINY84A-SSF
+* 1 x SPDT slide switch (see footprint; many ~8 mm SMD slide switches will fit, AliExpress has quite a few)
+* 1 x push button (same here; 3.4 x 3.4 mm SMD push buttons often work)
+
+I'd really love to point towards specific components for the slide switch or push button. But apart from sourcing the part via JLCPCB assembly or scavenging it, I have none.
+
+Really, have faith: as long as you manage to connect the footprint pads with the part pins somehow, a lot of switches will work here (source: trust me bro).
+
+### Soldering
+
+<p align="center">
+  <img src="../docs/d20_assembly.jpg" width="90%">
+</p>
+
 ## Colour Suggestions
 
 The board was intentionally designed with colourful solder masks and
