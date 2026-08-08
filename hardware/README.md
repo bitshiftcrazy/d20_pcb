@@ -60,6 +60,28 @@ fabrication/jlcpcb/
 
 Vendor-specific BOM and placement files for JLCPCB assembly.
 
+### JLCPCB Component Substitutions
+
+Component availability at JLCPCB/LCSC changes over time. During a 2026
+JLCPCB assembly order, the following substitutions were proposed for the
+v3 BOM:
+
+| Designator | Original value / function | Substitute | Notes |
+| --- | --- | --- | --- |
+| C2 | 10 µF | C7472949 — HGC0402R5106M100NTEJ | 10 µF, 10 V, 0402 MLCC. Original C6119763 was out of stock. |
+| R1–R5 | 150 Ω | C2909321 — FRC0402F1500TS | 150 Ω, 1%, 0402 |
+| R7–R8 | 10 kΩ | C723366 — RT0402FRE0710KL | 10 kΩ, 1%, 0402 thin-film resistor, YAGEO |
+| J1 | ISP header | C48641755 — HX PM2.54-1x6P | SMD female 1×6 header with staggered pins. The original BOM entry had no LCSC part number. |
+| J2 and G* | — | DNP | No physical components fitted. |
+
+The suggested C2 replacement is a ceramic MLCC rather than the capacitor
+specified in the original BOM. Component substitutions should always be
+reviewed before ordering, since stock and JLCPCB/LCSC part assignments
+can change.
+
+Thanks to [@dmaglio](https://github.com/dmaglio) for reporting these
+substitutions in [issue #1](https://github.com/bitshiftcrazy/d20_pcb/issues/1).
+
 ## KiCad Project
 
 The board is designed using KiCad.
